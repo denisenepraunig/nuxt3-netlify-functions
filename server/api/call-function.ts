@@ -7,8 +7,9 @@ export default defineEventHandler(async (event) => {
   // when running `netfliy dev` this will work if I use this full URL
   // http://localhost:8888/.netlify/functions/hello
 
-  // how is this suppoesd to work in production? Do I something like BASE_URL?
+  // how is this supposed to work in production? Do I something like BASE_URL?
   
+  // this works
   const whatever = await $fetch('https://nuxt3-netlify-functions.netlify.app/.netlify/functions/hello')
   console.log("🐥🐥", whatever)
   return whatever
