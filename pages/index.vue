@@ -16,7 +16,7 @@ const { data } = await useFetch('/api/hello')
 console.log('data:', data)
 
 
-const { data2 } = await useFetch('/api/call-function')
+const { data: data2 } = await useFetch('/api/call-function')
 console.log('data2:', data2)
 
 // call the nuxt server api with the fetch function for /api/hello
