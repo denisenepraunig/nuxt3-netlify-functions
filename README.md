@@ -19,6 +19,13 @@ File `server\api\call-function.js`
   const whatever = await $fetch('https://nuxt3-netlify-functions.netlify.app/.netlify/functions/hello')
   console.log("🐥🐥", whatever)
   return whatever
+
+  /* ANSWER FROM SUPPORT:
+  Yes, that’s the ideal way. But if you absolutely want to make it dynamic, you can use:
+
+  process.env.URL
+  OR you can use getRequestURL(event).origin
+  */
 ```
 
 ## Setup
