@@ -5,9 +5,9 @@
     <p>Data:
       <code>{{ data }}</code>
     </p>
-    <!-- <p>Data2:
+    <p>Data2:
       <code>{{ data2 }}</code>
-    </p> -->
+    </p>
   </div>
 </template>
 
@@ -16,8 +16,8 @@ const { data } = await useFetch('/api/hello')
 console.log('data:', data)
 
 
-// const { data2 } = await useFetch('/api/call-function')
-// console.log('data2:', data2)
+const { data2 } = await useFetch('/api/call-function')
+console.log('data2:', data2)
 
 // call the nuxt server api with the fetch function for /api/hello
 
